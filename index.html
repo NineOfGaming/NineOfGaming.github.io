@@ -3,13 +3,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NineOfGaming Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            const randomSpan = document.getElementById('random-span');
+            const spans = document.querySelectorAll('.bubbles span');
+            spans.forEach(span => {
+                span.style.setProperty('--i', Math.floor(Math.random() * 21) + 10);
+            });
+        };
+    </script>
 </head>
 <body>
-    <h1>NineOfGaming</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptates tempora, accusantium sequi, neque aperiam optio voluptatum assumenda eos incidunt quas libero vitae ullam eligendi sunt molestias maxime distinctio alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptates tempora, accusantium sequi, neque aperiam optio voluptatum assumenda eos incidunt quas libero vitae ullam eligendi sunt molestias maxime distinctio alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptates tempora, accusantium sequi, neque aperiam optio voluptatum assumenda eos incidunt quas libero vitae ullam eligendi sunt molestias maxime distinctio alias.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptates tempora, accusantium sequi, neque aperiam optio voluptatum assumenda eos incidunt quas libero vitae ullam eligendi sunt molestias maxime distinctio alias.</p>
+    <div class="container">
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </body>
 </html>
