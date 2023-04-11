@@ -9,11 +9,20 @@
         window.onload = function() {
             const randomSpan = document.getElementById('random-span');
             const spans = document.querySelectorAll('.bubbles span');
+            let lastValue;
+    
             spans.forEach(span => {
-                span.style.setProperty('--i', Math.floor(Math.random() * 21) + 10);
+                let randomValue = Math.floor(Math.random() * 21) + 10;
+    
+                while (randomValue === lastValue) {
+                    randomValue = Math.floor(Math.random() * 21) + 10;
+                }
+    
+                lastValue = randomValue;
+                span.style.setProperty('--i', randomValue);
             });
         };
-    </script>
+    </script>    
 </head>
 <body>
     <div class="container">
