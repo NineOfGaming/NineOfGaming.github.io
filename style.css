@@ -36,7 +36,7 @@ body {
                 0 0 calc(5vw + 5vh) #4fc3dc,
                 0 0 calc(10vw + 10vh) #4fc3dc;
     animation: animate 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
+    animation-duration: calc(300s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
