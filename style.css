@@ -1,59 +1,14 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    background: #0c192c;
-}
-
-.container {
-    position: relative;
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.bubbles {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-}
-
-.bubbles span {
-    position: relative;
-    width: calc(3vw + 3vh);
-    height: calc(3vw + 3vh);
-    background: #4fc3dc;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 calc(1vw + 1vh) #4fc3dc44,
-                0 0 calc(5vw + 5vh) #4fc3dc,
-                0 0 calc(10vw + 10vh) #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(300s / var(--i));
-}
-
-.bubbles span:nth-child(even) {
-    background: #4fdcb2;
-    box-shadow: 0 0 0 calc(1vw + 1vh) #4fdcb244,
-                0 0 calc(5vw + 5vh) #4fdcb2,
-                0 0 calc(10vw + 10vh) #4fdcb2;
-}
-
-@keyframes animate {
-    0% {
-      transform: translateY(100vh) scale(0);
-    }
-    50% {
-      transform: translateY(-50vh) scale(0.5);
-    }
-    100%{
-        transform: translateY(-200vh) scale(0);
-    }
+    z-index: -1;
+    background-color: #000;
 }
